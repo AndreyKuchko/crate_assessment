@@ -26,8 +26,9 @@ $ rm -f 2029
 
 ## Commands
 
-Following commands are supported in cli interface:
-1. Performs inserting of csv data using sync approach
+Following commands are supported in cli interface
+
+### Performs inserting of csv data using sync approach
 ```shell
 $ crate_vbb_importer sync_insert -h
 usage: crate_vbb_importer sync_insert [-h] [--host HOST] [-u USER]
@@ -73,7 +74,7 @@ Processing of trips.txt was finished. It took 19.959 seconds, 224268 csv lines w
 Finished! It took 746.495 seconds in total
 ```
 
-2. Performs inserting of csv data using async approach
+### Performs inserting of csv data using async approach
 ```shell
 $ crate_vbb_importer async_insert -h
 usage: crate_vbb_importer async_insert [-h] [--host HOST] [-u USER]
@@ -117,7 +118,7 @@ Processing of stop_times.txt was finished. It took 752.140 seconds, 5288633 csv 
 Finished! It took 752.314 seconds in total
 ```
 
-3. Performs database cleaning
+### Performs database cleaning
 ```shell
 $ crate_vbb_importer clean -h
 usage: crate_vbb_importer clean [-h] [--host HOST] [-u USER] [-p PASSWORD]
