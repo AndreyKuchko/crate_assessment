@@ -3,8 +3,14 @@ from crate_vbb_importer.utils.fields import Converter as C
 
 
 class BaseModel(object):
+    """ Base model for csv data representation
+    """
     table = None
     source_file = None
+    # fields are described in format
+    # (
+    #     '<field_name>': ('<db_field_definition>', <convert_function>, ),
+    # )
     fields = ()
 
     def __init__(self, executor, batch_size=None):

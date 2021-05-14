@@ -11,6 +11,9 @@ from crate_vbb_importer.utils.logging import get_logger
 
 
 class BaseCommand(object):
+    """ Base class for all commands. It contains common logic and common
+    arguments definition
+    """
     def __init__(self, args, remaining_args, argparser, **_):
         self.args = args
         self.remaining_args = remaining_args
@@ -97,6 +100,8 @@ class BaseCommand(object):
 
 
 class BaseAsyncCommand(BaseCommand):
+    """ Base class for async commands
+    """
     def __init__(self, args, remaining_args, argparser, **kwargs):
         self.loop = kwargs.pop('loop', asyncio.get_event_loop())
         super().__init__(args, remaining_args, argparser, **kwargs)
@@ -137,13 +142,7 @@ class BaseAsyncCommand(BaseCommand):
             )
 
     def do_run(self):
-        try:
-            return self.loop.run_until_complete(self.async_run())
-        finally:
-            self.loop.run_until_complete(self.async_on_complete())
-
-    async def async_on_complete(self):
-        pass
+        return self.loop.run_until_complete(self.async_run())
 
     async def async_run(self):
         raise NotImplementedError

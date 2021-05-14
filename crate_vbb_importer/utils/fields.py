@@ -4,6 +4,8 @@ from datetime import date
 
 
 class Converter(object):
+    """ Set on functions for type-casting to prepare fields data to DB format
+    """
     @staticmethod
     def get_plain_value(value):
         return value

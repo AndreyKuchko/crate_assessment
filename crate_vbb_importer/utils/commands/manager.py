@@ -8,6 +8,9 @@ from crate_vbb_importer.utils.commands.base import BaseCommand
 
 
 class CommandManager:
+    """ Wrapper around commands that makes available choosing of commands from
+    common parent command(crate_vbb_importer)
+    """
     def __init__(self, registry, raw_args=None):
         self.registry = registry
         self.argparser = argparse.ArgumentParser()
