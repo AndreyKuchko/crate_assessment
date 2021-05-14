@@ -1,5 +1,6 @@
 datasource
 env
+.tox
 .idea
 *.egg-info
 *.pyc

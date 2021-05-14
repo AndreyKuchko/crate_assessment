@@ -1,0 +1,2 @@
+"from_stop_id","to_stop_id","transfer_type","min_transfer_time","from_route_id","to_route_id","from_trip_id","to_trip_id"
+000008010327,000008010327,2,240,,,157862046,157882971

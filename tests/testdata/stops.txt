@@ -1,0 +1,2 @@
+"stop_id","stop_code","stop_name","stop_desc","stop_lat","stop_lon","location_type","parent_station","wheelchair_boarding","platform_code","zone_id"
+900000006102,"","Berlin, Prinzenallee/Soldiner Str.",,"52.558656000000","13.386241000000",1,,1,"","900000006102 5656 Berlin, Prinzenallee/Soldiner Str."

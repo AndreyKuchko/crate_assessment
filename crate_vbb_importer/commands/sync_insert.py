@@ -10,7 +10,7 @@ from crate_vbb_importer.utils.commands.base import BaseCommand
 
 
 class Command(BaseCommand):
-    """ Perform sync insert of data from csv files to CrateDB
+    """ Performs sync insert of data from csv files to CrateDB
     """
 
     @staticmethod

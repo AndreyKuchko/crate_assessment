@@ -32,7 +32,8 @@ class CommandManager:
             if self.is_command(attribute):
                 subparser = self.subparsers.add_parser(
                     attribute_name,
-                    description=attribute.Command.__doc__
+                    description=attribute.Command.__doc__,
+                    formatter_class=argparse.ArgumentDefaultsHelpFormatter
                 )
                 attribute.Command.prepare_argparser(subparser)
 

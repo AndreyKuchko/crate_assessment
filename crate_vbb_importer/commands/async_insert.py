@@ -9,15 +9,10 @@ from crate_vbb_importer.utils.commands.base import BaseAsyncCommand
 
 
 class Command(BaseAsyncCommand):
-    """ Perform async insert of data from csv files to CrateDB
+    """ Performs async insert of data from csv files to CrateDB
     """
 
     async def process(self, model):
-        conn = await self.create_connection()
-        obj = model(conn)
-        await obj.drop_async()
-        await conn.close()
-
         start = time()
         conn = await self.create_connection()
         obj = model(conn, self.args.batch_size)
