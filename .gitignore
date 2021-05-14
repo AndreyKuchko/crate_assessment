@@ -1,0 +1,5 @@
+datasource
+env
+.idea
+*.egg-info
+*.pyc
