@@ -1,5 +1,7 @@
 # This document describes how to insert the VBB transit dataset into CrateDB
 
+![tests workflow](https://github.com/AndreyKuchko/crate_assessment/actions/workflows/tests.yml/badge.svg)
+
 ## Prerequisites
 
 You will need Python 3.7, virtualenv and docker.
