@@ -1,6 +1,7 @@
 # This document describes how to insert the VBB transit dataset into CrateDB
 
 [![tests](https://github.com/AndreyKuchko/crate_assessment/actions/workflows/tests.yml/badge.svg)](https://github.com/AndreyKuchko/crate_assessment/actions/workflows/tests.yml)
+[![codecov](https://codecov.io/gh/AndreyKuchko/crate_assessment/branch/master/graph/badge.svg?token=4YRFUCIPJU)](https://codecov.io/gh/AndreyKuchko/crate_assessment)
 
 ## Prerequisites
 
